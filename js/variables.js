@@ -16,9 +16,9 @@ var hero_full_screen = true;                    //If true, the hero section will
 
 //HERO BACKGROUND SLIDESHOW IMAGES
 var slidehow_images = [
-    "/images/mj/slideshow_1.jpg",
-    "/images/mj/slideshow_2.jpg",
-    "/images/mj/slideshow_3.jpg"
+    "../images/mj/slideshow_1.jpg",
+    "../images/mj/slideshow_2.jpg",
+    "../images/mj/slideshow_3.jpg"
 ];
 
 //TIMELINE PARALLAX
