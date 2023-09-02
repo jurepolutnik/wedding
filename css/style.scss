@@ -59,7 +59,6 @@ $highlight-ff: 'Playfair Display', serif;
 
 $pattern: url('../images/neela-pattern.png');
 
-
 /* #Mixins
 ================================================== */
 @mixin border-radius($radius){
@@ -139,7 +138,7 @@ $pattern: url('../images/neela-pattern.png');
 /* #Sections with background image
 ================================================== */
 #our-story-title{
-    @include background-image-retina("/images/mj/our_story_background", 'jpeg');
+    @include background-image-retina("../images/mj/our_story_background", 'jpeg');
 }
 
 #the-wedding{
