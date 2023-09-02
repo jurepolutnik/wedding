@@ -139,7 +139,7 @@ $pattern: url('../images/neela-pattern.png');
 /* #Sections with background image
 ================================================== */
 #our-story-title{
-    @include background-image-retina("https://via.placeholder.com/1920x1080", 'png');
+    @include background-image-retina("/images/mj/our_story_background", 'jpeg');
 }
 
 #the-wedding{
@@ -2619,9 +2619,9 @@ p.center{
 		padding:26px 22px;
 		display:inline-block;
 		position: absolute;
-		top: 50px;
+		top: -30px;
 		z-index: 10;
-		right: 19%;
+		right: 25%;
 
 		.neela-style{
 			--offset: 7px;
@@ -3281,28 +3281,41 @@ p.center{
 
 /* #Wedding Location
 ================================================== */
+#schedule {
+	padding-bottom: 10px; 
+	.section-title {
+		margin-bottom: 0px; 
+	}
+}
+
+#location {
+	.section-title {
+		margin-bottom: 0px; 
+	}
+}
+
 .map-info-container{
 	display: grid;
 	grid-template-columns: repeat(24, 1fr);
 	position: relative;
-	margin-bottom: 50px;
+	// margin-bottom: 50px;
 
-	&::before {
-		content: "";
-		width: 1px;
-		height: calc(100% + 59px);
-		position: absolute;
-		top: 0;
-		left: 50%;
-		margin-left: -1px;
-		background: $color;
-		clear: both;
-	}
+	// &::before {
+	// 	content: "";
+	// 	width: 1px;
+	// 	height: calc(100% + 59px);
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 50%;
+	// 	margin-left: -1px;
+	// 	background: $color;
+	// 	clear: both;
+	// }
 
 	.info-wrapper{
-		grid-column: 1 / span 9;
+		grid-column: 5 / -5;
 		grid-row: 1;
-		margin-top: 10%;
+		margin-top: -30px;
 		z-index: 1;
 
 		.location-info{
@@ -3400,7 +3413,7 @@ p.center{
 	}
 
 	.map-wrapper{
-		grid-column: 6 / -1;
+		grid-column: 2 / -2;
 		grid-row: 1;
 		position: relative;
 		display: inline-block;

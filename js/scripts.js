@@ -1043,11 +1043,11 @@ var Neela;
             });
 
             //Slide map info on mouseenter map_canvas
-            $("#map_canvas").on("mouseenter", function () {
-                $(".location-info").addClass("open");
-            }).on("mouseleave", function () {
-                $(".location-info").removeClass("open");
-            });
+            // $("#map_canvas").on("mouseenter", function () {
+            //     $(".location-info").addClass("open");
+            // }).on("mouseleave", function () {
+            //     $(".location-info").removeClass("open");
+            // });
 
             // Scroll effect of navigation logo and .scrollto buttons
             $(".nav-logo, .scrollto").on("click", function (event) {

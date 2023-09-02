@@ -16,9 +16,9 @@ var hero_full_screen = true;                    //If true, the hero section will
 
 //HERO BACKGROUND SLIDESHOW IMAGES
 var slidehow_images = [
-    "https://via.placeholder.com/1920x1080.png",
-    "https://via.placeholder.com/1920x1080.png",
-    "https://via.placeholder.com/1920x1080.png"
+    "/images/mj/slideshow_1.jpg",
+    "/images/mj/slideshow_2.jpg",
+    "/images/mj/slideshow_3.jpg"
 ];
 
 //TIMELINE PARALLAX
@@ -41,54 +41,40 @@ var countdown_end_msg = "Event Started!";       //Message to display when the co
 
 //GOOGLE MAP VARIABLES
 var map_canvas_id = "map_canvas";               //The HTML "id" of the map canvas
-var map_color = "#8eaeba";                      //Google map color
-var map_initial_zoom = 15;                      //The initial zoom when Google map loads
-var map_initial_latitude = 33.779613;           //Google map initial Latitude. If "null", the latitude of the first marked will be used
-var map_initial_longitude = -118.066904;        //Google map initial Longitude. If "null", the longitude of the first marked will be used
+var map_color = "#f0f0fe"; ///8eaeba";                      //Google map color
+var map_initial_zoom = 17;                      //The initial zoom when Google map loads
+var map_initial_latitude = 45.823623;           //Google map initial Latitude. If "null", the latitude of the first marked will be used
+var map_initial_longitude = 13.844816;        //Google map initial Longitude. If "null", the longitude of the first marked will be used
 var use_default_map_style = false;              //If true, default map style will be used
 
 //List of map markers
 var map_markers = [
     {
-        "title": "Reception",
-        "latitude": 33.775664,
-        "longitude": -118.065090,
+        "title": "Parking",
+        "latitude": 45.82386797459058,
+        "longitude": 13.84252247475232,
         "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Old Ranch Country Club <br> 29033 West Lake Drive, Agoura Hills, CA"
+        "infoWindow": "Parkirišče - valiko makedamsko parkirišče (100m oddaljeno od vhoda v Štanjel)"
     },
     {
-        "title": "Accommodation 1",
-        "latitude": 33.777929,
-        "longitude": -118.076891,
-        "icon": "fas fa-bed", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Accommodation 1 <br> Rossmoor, CA 90720"
+        "title": "Zbor svatov",
+        "latitude": 45.82384740851871,
+        "longitude": 13.84417387811753,
+        "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "infoWindow": "Zbor svatov pred vhodom v Ferrarijev vrt (velika kovinska vrata)"
     },
     {
-        "title": "Accommodation 2",
-        "latitude": 33.780428,
-        "longitude": -118.084075,
-        "icon": "fas fa-bed", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Accommodation 2 <br> Los Alamitos, CA 90720"
+        "title": "Obred",
+        "latitude": 45.823155278121114,
+        "longitude": 13.847837023895556,
+        "icon": "fas fa-theater-masks", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "infoWindow": "Obred, Ferraijev vrt"
     },
     {
-        "title": "Accommodation 3",
-        "latitude": 33.777551,
-        "longitude": -118.050468,
-        "icon": "fas fa-bed", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Accommodation 3 <br> Seal Beach, CA 90740"
+        "title": "Pogostitev",
+        "latitude": 45.82360767687253,
+        "longitude": 13.84506383087213,
+        "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "infoWindow": "Pogostitev in zabava v gradu Štanjel"
     },
-    {
-        "title": "Transportation",
-        "latitude": 33.782930,
-        "longitude": -118.060552,
-        "icon": "fas fa-plane", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Seal Beach VORTAC SLI <br> Los Alamitos, CA 90720"
-    },
-    {
-        "title": "Ceremony",
-        "latitude": 33.776384,
-        "longitude": -118.058149,
-        "icon": "fas fa-bell", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Birchwood Church <br> Seal Beach, CA 90740"
-    }
 ];
