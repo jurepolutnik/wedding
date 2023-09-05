@@ -582,14 +582,27 @@ var Neela;
                         shadow: "none",
                         content: "<div class=\"marker\"><i class=\"fa " + icon + "\"></i></div>"
                     });
+                    marker.infoWindow = infowindow;
 
                     google.maps.event.addListener(marker, "click", function () {
+                        closeAllInfoWindows()
                         infowindow.open(gmap, marker);
+                        if (event) event.stopPropagation();
                     });
+                    return marker;
                 };
 
+                function closeAllInfoWindows() {
+                    markers.forEach(marker => {
+                      marker.infoWindow.close();
+                    });
+                }
+
+
+                var markers = []
                 while (i < $_self.mapMarkers.length) {
-                    createMarker($_self.mapMarkers[i]);
+                    let marker = createMarker($_self.mapMarkers[i]);
+                    markers.push(marker)
                     i += 1;
                 }
             });

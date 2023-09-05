@@ -49,32 +49,46 @@ var use_default_map_style = false;              //If true, default map style wil
 
 //List of map markers
 var map_markers = [
-    {
-        "title": "Parking",
-        "latitude": 45.82386797459058,
-        "longitude": 13.84252247475232,
-        "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Parkirišče - valiko makedamsko parkirišče (100m oddaljeno od vhoda v Štanjel)"
-    },
+    // {
+    //     "title": "Parking",
+    //     "latitude": 45.82386797459058,
+    //     "longitude": 13.84252247475232,
+    //     "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+    //     "infoWindow": "Parkirišče - valiko makedamsko parkirišče (100m oddaljeno od vhoda v Štanjel)"
+    // },
     {
         "title": "Zbor svatov",
-        "latitude": 45.82384740851871,
-        "longitude": 13.84417387811753,
-        "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "latitude": 45.82388523499586,
+        "longitude": 13.844293754627977,
+        "icon": "fas fa-street-view", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
         "infoWindow": "Zbor svatov pred vhodom v Ferrarijev vrt (velika kovinska vrata)"
+    },
+    {
+        "title": "Fabijanova pot",
+        "latitude": 45.82487787797695,
+        "longitude": 13.84612206876499,
+        "icon": "fas fa-walking", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "infoWindow": "Fabijanova pot (10min)"
     },
     {
         "title": "Obred",
         "latitude": 45.823155278121114,
         "longitude": 13.847837023895556,
-        "icon": "fas fa-theater-masks", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "icon": "fas fa-ring", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
         "infoWindow": "Obred, Ferraijev vrt"
     },
     {
-        "title": "Pogostitev",
-        "latitude": 45.82360767687253,
-        "longitude": 13.84506383087213,
+        "title": "Zdravica",
+        "latitude": 45.82259638704738,
+        "longitude": 13.847546024663739,
         "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Pogostitev in zabava v gradu Štanjel"
+        "infoWindow": "Zdravica, Ferrarijev vrt"
+    },
+    {
+        "title": "Pogostitev in zabava",
+        "latitude":  45.82359048464304,
+        "longitude": 13.845057886526753,
+        "icon": "fas fa-utensils", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+        "infoWindow": "Pogostitev in zabava"
     },
 ];
