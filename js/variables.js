@@ -61,34 +61,38 @@ var map_markers = [
         "latitude": 45.82388523499586,
         "longitude": 13.844293754627977,
         "icon": "fas fa-street-view", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Zbor svatov pred vhodom v Ferrarijev vrt (velika kovinska vrata)"
+        "info": {title: "Prihod svatov", time: "16:30", text: "Vhod v Ferrarijev vrt (pri železnih vratih na poti na grad)"}
     },
     {
         "title": "Fabijanova pot",
         "latitude": 45.82487787797695,
         "longitude": 13.84612206876499,
         "icon": "fas fa-walking", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Fabijanova pot (10min)"
+        "infoWindow": "Fabijanova pot (10min)",
+        "info": {title: "Fabijanova pot", time: "16:50", text: "Pot po Fabijanovi poti do Ferrafijevega vrta (peščena pot, 10min)"}
     },
     {
         "title": "Obred",
         "latitude": 45.823155278121114,
         "longitude": 13.847837023895556,
         "icon": "fas fa-ring", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Obred, Ferraijev vrt"
+        "infoWindow": "Obred, Ferraijev vrt",
+        "info": {title: "Obred", time: "17:00", text: "Obred in zdravica v Ferrafijevega vrtu"}
     },
-    {
-        "title": "Zdravica",
-        "latitude": 45.82259638704738,
-        "longitude": 13.847546024663739,
-        "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Zdravica, Ferrarijev vrt"
-    },
+    // {
+    //     "title": "Zdravica",
+    //     "latitude": 45.82259638704738,
+    //     "longitude": 13.847546024663739,
+    //     "icon": "fas fa-glass-cheers", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+    //     "infoWindow": "Zdravica, Ferrarijev vrt",
+    //     "info": {title: "Prihod svatov", time: "16:30", text: "Vhod v Ferrarijev vrt (pri železnih vratih na poti na grad)"}
+    // },
     {
         "title": "Pogostitev in zabava",
         "latitude":  45.82359048464304,
         "longitude": 13.845057886526753,
         "icon": "fas fa-utensils", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-        "infoWindow": "Pogostitev in zabava"
+        "infoWindow": "Pogostitev in zabava",
+        "info": {title: "Pogostitev in zabava", time: "18:30", text: "Sprejem ob 18:30 na grajskem vrtu, večerja ob 20:30 v Viteški dvorani"}
     },
 ];

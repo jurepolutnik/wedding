@@ -563,15 +563,20 @@ var Neela;
                 gmap = new google.maps.Map(document.getElementById(mapCanvasId), mapOptions);
                 gmap.mapTypes.set("map_style", styledMap);
                 gmap.setMapTypeId("map_style");
+                gmap.setClickableIcons(false);
 
                 createMarker = function (obj) {
                     var lat = obj.latitude;
                     var lng = obj.longitude;
                     var icon = obj.icon;
-                    var info = obj.infoWindow;
+                    var info = obj.info;
 
                     var infowindow = new google.maps.InfoWindow({
-                        content: "<div class=\"infoWindow\">" + info + "</div>"
+                        // content: "<div class=\"infoWindow\">" + info + "</div>"
+                        content: `<div class=\"infoWindow\">
+                            <div style="font-size:medium;font-weight:500">${info.title}</div>
+                            <div style="padding-bottom: 10px;">${info.time}</div>
+                            ${info.text}</div>`
                     });
 
                     var marker = new RichMarker({
@@ -580,14 +585,14 @@ var Neela;
                         anchor: 8,
                         anchorPoint: new google.maps.Point(0, -50),
                         shadow: "none",
+                        zindex: 1000,
                         content: "<div class=\"marker\"><i class=\"fa " + icon + "\"></i></div>"
                     });
                     marker.infoWindow = infowindow;
 
-                    google.maps.event.addListener(marker, "click", function () {
-                        closeAllInfoWindows()
+                    marker.addListener("click", function (ev){
+                        closeAllInfoWindows();
                         infowindow.open(gmap, marker);
-                        if (event) event.stopPropagation();
                     });
                     return marker;
                 };
