@@ -182,7 +182,7 @@ var Neela;
             var isLoaded = setInterval(function () {
                 if (/loaded|complete/.test(document.readyState)) {
                     clearInterval(isLoaded);
-                    $("#preloader").fadeOut(1000);
+                    $("#preloader").fadeOut(100000);
                 }
             }, 10);
         },
