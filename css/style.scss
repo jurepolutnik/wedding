@@ -2158,8 +2158,8 @@ p.center{
 /* #ABOUT US
 ================================================== */
 #about-us{
-	margin-top: -210px;
-	background: linear-gradient(to bottom, #fff, #fff) no-repeat 0px 210px;
+	margin-top: 0px; // 210px;
+	background: white; // linear-gradient(to bottom, #fff, #fff) no-repeat 0px 210px;
 	position:relative;
 }
 
@@ -2833,6 +2833,7 @@ p.center{
 	grid-template-columns: repeat(24, 1fr);
 	position: relative;
 	margin-bottom: 100px;
+	top: -50px;
 
 	&::after{
 		content:"";
@@ -2890,7 +2891,7 @@ p.center{
 	}
 
 	.punchline{
-		font-size:60pt;
+		font-size:42pt;
 		font-weight:700;
 		font-family: $highlight-ff;
 		color:$color;
@@ -6394,7 +6395,7 @@ textarea.form-control{
 	.timeline{
 		.template-1 {
 			.date{
-				top:18px;
+				top:-60px;
 				right: 4%;
 
 				.neela-style{
@@ -6439,7 +6440,7 @@ textarea.form-control{
 	}
 
 	.timeline_footer .punchline{
-		font-size: 44pt;
+		font-size: 36pt;
 
 		small{
 			font-size: 16pt;
@@ -6738,7 +6739,7 @@ textarea.form-control{
 	.timeline{
 		.template-1 {
 			.date{
-				top: -10px;
+				top: -60px;
 				padding: 20px 16px;
 
 				.neela-style{
@@ -6762,7 +6763,7 @@ textarea.form-control{
 	}
 
 	.timeline_footer .punchline{
-		font-size: 34pt;
+		font-size: 28pt;
 
 		small{
 			font-size: 14pt;
