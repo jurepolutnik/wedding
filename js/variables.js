@@ -42,9 +42,9 @@ var countdown_end_msg = "Event Started!";       //Message to display when the co
 //GOOGLE MAP VARIABLES
 var map_canvas_id = "map_canvas";               //The HTML "id" of the map canvas
 var map_color = "#f0f0fe"; ///8eaeba";                      //Google map color
-var map_initial_zoom = 17;                      //The initial zoom when Google map loads
-var map_initial_latitude = 45.823623;           //Google map initial Latitude. If "null", the latitude of the first marked will be used
-var map_initial_longitude = 13.844816;        //Google map initial Longitude. If "null", the longitude of the first marked will be used
+var map_initial_zoom = 16;                      //The initial zoom when Google map loads
+var map_initial_latitude = 45.82406339138396;           //Google map initial Latitude. If "null", the latitude of the first marked will be used
+var map_initial_longitude = 13.846010968088196;        //Google map initial Longitude. If "null", the longitude of the first marked will be used
 var use_default_map_style = false;              //If true, default map style will be used
 
 //List of map markers

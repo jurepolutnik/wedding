@@ -3315,7 +3315,7 @@ p.center{
 	.info-wrapper{
 		grid-column: 5 / -5;
 		grid-row: 1;
-		margin-top: -30px;
+		margin-top: 10px;
 		z-index: 1;
 
 		.location-info{
@@ -6098,7 +6098,7 @@ textarea.form-control{
 		.info-wrapper{
 			grid-column: 5 / -5;
 			grid-row: 2;
-			margin-top: 3%;
+			margin-top: 10px;
 		}
 
 		.map-wrapper{
@@ -6461,8 +6461,8 @@ textarea.form-control{
 	}
 
 	.map-info-container .info-wrapper {
-		grid-column: 3 / -3;
-		margin-top: 15%;
+		grid-column: 2 / -2;
+		margin-top: 10px;
 	}
 
 	.bmaid-gmen .image .hover-info,
@@ -6705,7 +6705,7 @@ textarea.form-control{
 
 	.map-info-container .info-wrapper {
 		grid-column: 1 / -1;
-		margin-top: 15%;
+		margin-top: 10px;
 	}
 
 	.countdown > div{
