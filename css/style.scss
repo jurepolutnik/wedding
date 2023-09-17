@@ -908,10 +908,14 @@ p.center{
 		-ms-backface-visibility: hidden;
 		-webkit-tap-highlight-color: transparent;
 		-webkit-touch-callout: none;
+		// height: 300px;
 
 		img {
 			display: block;
-			width: 100%;
+			// width: 100%;
+			height: 100%;
+			margin-bottom: auto;
+			margin-top: auto;
 
 			&.owl-lazy {
 				transform-style: preserve-3d;
